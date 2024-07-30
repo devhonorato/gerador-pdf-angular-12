@@ -1,0 +1,103 @@
+<div id="PDFTemplate" class="templatePDF">
+    <div class="row" style=" display: flex; align-items: center; ">
+        <div class="col-8" style=" display: flex; ">
+            <img src="../../assets/img/img.png" width="100px" height="102px" class="img-rounded logo">
+            <address>
+        <strong>Honorato Web services Ltd.</strong>
+        <br>
+        Endereço XPTO, Haryana-122001, 123
+        <br>
+        São Paulo
+      </address>
+        </div>
+        <div class="col-4" style="display: flex;justify-content: flex-end;flex-direction: column;align-items: flex-end;">
+
+            <p class="p-0 m-0"><strong>Invoice #</strong> 2340</p>
+            <p class="p-0 m-0"><strong style=" font-size: 12px; display: none;">Data</strong> {{date}}</p>
+            <p class="p-0 m-0"><strong style=" font-size: 12px; display: none;">Hora</strong> {{hour}}</p>
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 text-center">
+            <h2>Invoice</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col invoice-body">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Description</th>
+                        <th>Month/Quantity</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let a of array">
+                        <td>{{a.Tipo}}</td>
+                        <td>{{a.Site}}</td>
+                        <td>{{a.Tempo}}</td>
+                        <td>{{a.Valor}}</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4"></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">&nbsp;</td>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$1000.00</strong></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <strong>Phone: </strong> 9 9999-9999
+        </div>
+        <div class="col">
+            <strong>Email: </strong> <a href="email@email.com"> email@email.com</a>
+        </div>
+        <div class="col">
+            <strong>Website: </strong> <a href="http://teste.com"> http://teste.com</a>
+        </div>
+    </div>
+
+    <!-- <div class="align-items-center pb-3 mb-5">
+
+        <h1>Template PDF</h1>
+
+        <div style="display: flex">
+            <p style="width: 100%;font-size: 18px;">
+                <strong>Identificação</strong>
+            </p>
+        </div>
+
+        <div style="display: flex">
+            <p style="width: 50%;padding-right: 10px;">
+                <strong>Razão Social:</strong>&nbsp;<span>  </span>
+            </p>
+            <p style="width: 50%;">
+                <strong>CNPJ:</strong>&nbsp;<span>  </span>
+            </p>
+        </div>
+
+        <div style="display: flex">
+            <p style="width: 100%;font-size: 18px;">
+                <strong>Imagens</strong>
+            </p>
+        </div>
+
+        <div style="display: flex;justify-content: center;" class="align-items-center">
+            <img src="../../assets/img/img.png" style=" background: #eee; padding: 9px; width: 200px; border: 2px solid red;" />
+            <img src="../../assets/img/img.jpg" style=" background: #eee; padding: 9px; width: 200px; border: 2px solid red;" />
+            <img src="../../assets/img/img.svg" style=" background: #eee; padding: 9px; width: 200px; border: 2px solid red;" />
+        </div>
+
+    </div> -->
+
+</div>
